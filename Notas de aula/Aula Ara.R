@@ -162,4 +162,3 @@ dados_pr$CD_GEOCOMDM=as.character(dados_pr$CD_GEOCOMDM)
 mapa_redD=left_join(mapa_red, dados_pr, by="CD_GEOCOMDM")
 
 
-..
