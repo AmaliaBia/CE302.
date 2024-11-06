@@ -562,4 +562,4 @@ texto_tabulado <- "Primeira coluna\tSegunda coluna\tTerceira coluna"
 str_view(texto_tabulado)
 
 
-..
+
