@@ -160,5 +160,5 @@ dados_pr=read.csv("/home/est/bao24/Downloads/dados_mapa/dados_pr.csv",dec=",", s
 names(dados_pr)[1]="CD_GEOCOMDM"
 dados_pr$CD_GEOCOMDM=as.character(dados_pr$CD_GEOCOMDM)
 mapa_redD=left_join(mapa_red, dados_pr, by="CD_GEOCOMDM")
-
+#incompleto, ver material 
 
