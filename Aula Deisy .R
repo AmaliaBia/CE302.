@@ -561,5 +561,8 @@ str_view(texto_multilinhas)
 texto_tabulado <- "Primeira coluna\tSegunda coluna\tTerceira coluna" 
 str_view(texto_tabulado)
 
+##################################
+
+
 
 

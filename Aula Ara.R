@@ -162,3 +162,45 @@ dados_pr$CD_GEOCOMDM=as.character(dados_pr$CD_GEOCOMDM)
 mapa_redD=left_join(mapa_red, dados_pr, by="CD_GEOCOMDM")
 #incompleto, ver material 
 
+#################shiny
+
+require(shiny)
+#DEFININDO INTERFACE DE USUÁRIO
+ui<- fluidPage(
+  #PAINEL DE TÍTULO DA PÁGINA
+  titlePanel("")
+  #TIPO DE LAYOUT
+  sidebarLayout(
+    #PAINEL LATERAL
+    sidebarPanel("bbb"),
+    #PAINEL PRINCIPAL
+    mainPanel("aqc")
+  )
+)
+#DEFININDO FUNÇÕES DO R
+server<-function(input,output){
+}
+#EXECUTANDO
+shinyApp(ui,server)
+
+#DEFININDO INTERFACE DE USUÁRIO
+ui<- fluidPage(
+  #PAINEL DE TÍTULO DA PÁGINA
+  titlePanel("TÍTULO DA PÁGINA"),
+  #TIPO DE LAYOUT
+  sidebarLayout(
+    #PAINEL LATERAL
+    sidebarPanel(h1("MENU LATERAL"),
+                 h2("TEXTO 2"),
+                 h3("TEXTO 3")),
+    #PAINEL PRINCIPAL
+    mainPanel(h1("PAGINA PRINCIPAL"),
+              h2("PRINCIPAL 2"), 
+              h3("PRINCIPAL 3"))
+  )
+)
+#DEFININDO FUNÇÕES DO R
+server<-function(input,output){
+}
+shinyApp(ui,server)
+
